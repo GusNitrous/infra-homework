@@ -1,0 +1,12 @@
+name: Test
+
+on: 
+  push:
+    branches: [develop]
+
+jobs:
+  install-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dependencies
+        run: npm i
